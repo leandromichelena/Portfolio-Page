@@ -31,7 +31,7 @@
                         <a href="#work">Work</a>
                     </li>
                     <li>
-                        <a href="#Contact">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li>
                         <a href="./assets/documents/CV Leandro Michelena.pdf">Resume</a>
@@ -42,17 +42,85 @@
     </header>
 
     <!-- About me section -->
-    <section>
+    <section class="about-me" id="about-me">
         <h2>About me</h2>
+        <div class="profile-picture">
+            <img src="https://avatars.githubusercontent.com/u/97864910?v=4" alt="Profile photo of Leandro Michelena"/>
+        </div>
+        <p>
+            Leandro is an architect from Brazil and currently works as a 3D Artist in Toronto, Ontario. <br>
+            Leandro is a part-time student at the University of Toronto Coding Bootcamp. After the bootcamp, he would like to work
+            as a front-end developer or full-stack web developer.<br>
+            During his free time, Leandro likes to spend time doing outdoor activities with his wife and friends.
+            His passions are video-games and board-games, photography, music and his two cats.
+        </p>
     </section>
+
     <!-- Work section -->
-    <section>
+    <section class="work" id="work">
         <h2>Work</h2>
+        <!-- Main portfolio work piece. Will be displayed larger. -->
+        <div class="work-main">
+            <div>
+                <h3>Robot Gladiators</h3>
+                <p>A javascript text based game.</p>
+            </div>
+            <img src="./assets/images/robot.jpg" alt="A small white robot with blue eyes stands in a fighting pose">
+            <!-- Add credits: Photo by Pavel Danilyuk from Pexels -->
+        </div>
+
+        <!-- Secondary work pieces. Will be displayed smaller. -->
+        <div class="work-secondary">
+            <div>
+                <h3>Run Buddy</h3>
+                <p>A fitness company landing page with responsive design features.</p>
+            </div>
+            <img src="./assets/images/run-buddy.jpg" alt="A woman is tying her running shoes outdoors">
+        </div>
+
+        <div class="work-secondary">
+            <div>
+                <h3>Horiseon</h3>
+                <p>An online marketing company website.</p>
+            </div>
+            <img src="./assets/images/horiseon.jpg" alt="A group of young people gathered around a meeting desk">
+        </div>
+
     </section>
+
+
     <!-- Contact section -->
-    <section>
+    <section class="contact" id="contact">
         <h2>Contact</h2>
+        
+        <address>
+        
+            <ul>
+                <strong>
+                    <li>Email: <a href="mailto:leandromichelena@gmail.com">leandromichelena@gmail.com</a></li>
+                </strong>
+                <strong>
+                    <li>Github: <a href="https://github.com/leandromichelena" target="_blank">Github.com/LeandroMichelena</a></li>
+                </strong>
+                <strong>
+                    <li>Telephone: <a href="tel:+1 647 574 5126">+1 (647) 574-5126</a></li>
+                </strong>
+            </ul>
+        
+        </address>
     </section>
+
+
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <h5>Made with ❤️ by Leandro Michelena.</h2>
+        <div class="footer-text">
+            <p>Somewhere in Toronto, <script>document.write(new Date().getFullYear());</script>.</p>
+        </div>
+    </footer>
 
 </body>
 

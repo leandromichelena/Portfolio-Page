@@ -1,0 +1,105 @@
+/* Used to remove browser default styles of every element on the page.
+* Is called Universal Selector  */
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+/* Apply styles to elements inside the body element */
+body {
+    color: #415a77; /* Apply light blue / teal color to text */
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header style ends */
+header {
+    padding: 20px 35px;  /* Applies 20px to the top and bottom, then 35px to the left and right */
+    background-color: #e0e1dd;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 a {
+    font-weight: bold;
+    font-size: 36px;
+    color: #1b263b;
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #415a77;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+/* Header style ends */
+
+/* Footer style begins */
+footer {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #1b263b;
+    color: #e0e1dd;
+    justify-content: space-between;
+}
+
+footer h5 {
+    font-size: small;
+}
+
+.footer-text {
+    font-size: smaller;
+}
+/* Footer style ends */
+
+.about-me {
+    margin: 20px;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me h2 {
+    display: block;
+}
+
+.about-me img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.work {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.work img {
+    width: 100%;
+}
+
+.contact {
+    margin: 20px 20px;
+}
