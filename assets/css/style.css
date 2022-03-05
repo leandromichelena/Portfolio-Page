@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Apply styles to elements inside the body element */
 body {
     color: #415a77; /* Apply light blue / teal color to text */
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Avenir, Montserrat, sans-serif;
 }
 
 /* Header style ends */
@@ -72,8 +76,9 @@ footer h5 {
 }
 /* Footer style ends */
 
+/* About me section style begins */
 .about-me {
-    margin: 20px;
+    margin: 20px auto;
     display: flex;
     width: 70%;
     justify-content: space-between;
@@ -81,16 +86,23 @@ footer h5 {
 }
 
 .about-me h2 {
-    display: block;
+    flex: 0 0 0;
+}
+
+.about-me p {
+    margin: 20px 50px;
+    text-align: justify;
 }
 
 .about-me img {
     width: 100px;
     border-radius: 50%;
+    margin: 10%;
 }
+/* About me section style ends */
 
 .work {
-    margin: 20px;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     width: 70%;
@@ -100,6 +112,26 @@ footer h5 {
     width: 100%;
 }
 
+.work-secondary {
+    flex: 1 50%;
+    padding-inline: 5px;
+}
+
 .contact {
-    margin: 20px 20px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact address ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact ul li {
+    margin: 20px;
 }
