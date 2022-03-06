@@ -16,6 +16,11 @@ body {
     font-family: Avenir, Montserrat, sans-serif;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header style ends */
 header {
     padding: 20px 35px;  /* Applies 20px to the top and bottom, then 35px to the left and right */
@@ -87,6 +92,7 @@ footer h5 {
 
 .about-me h2 {
     flex: 0 0 0;
+    margin-right: 30px;
 }
 
 .about-me p {
@@ -105,22 +111,54 @@ footer h5 {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.work h2 {
+    text-align: center;
+    margin: 15px auto;
 }
 
 .work img {
     width: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    display: flex;
+    object-position: top;
+}
+
+.work-main {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    flex: 0 100%
 }
 
 .work-secondary {
+    position: relative;
     flex: 1 50%;
-    padding-inline: 5px;
+    height: 300px;
+    padding: 10px;
 }
 
+.work-title {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    width: 60%;
+    background-color: #415a77;
+    color: #e0e1dd;
+}
+
+/* Contact section style begins */
 .contact {
     margin: 20px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -135,3 +173,4 @@ footer h5 {
 .contact ul li {
     margin: 20px;
 }
+/* Contact section style ends */
