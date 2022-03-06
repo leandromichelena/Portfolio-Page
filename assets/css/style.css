@@ -1,3 +1,12 @@
+/* Defines color variables to be used bellow */
+:root { 
+    --color1: #e0e1dd;
+    --color2: #415a77;
+    --color2transparency: rgba(65, 90, 119, 0.8);
+    --color3: #1b263b;
+}
+
+
 /* Used to remove browser default styles of every element on the page.
 * Is called Universal Selector  */
 * {
@@ -12,7 +21,7 @@ html {
 
 /* Apply styles to elements inside the body element */
 body {
-    color: #415a77; /* Apply light blue / teal color to text */
+    color: var(--color2); /* Apply light blue / teal color to text */
     font-family: Avenir, Montserrat, sans-serif;
 }
 
@@ -24,16 +33,17 @@ a:link, a:visited, a:hover, a:active {
 /* Header style ends */
 header {
     padding: 20px 35px;  /* Applies 20px to the top and bottom, then 35px to the left and right */
-    background-color: #e0e1dd;
+    background-color: var(--color1);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 header h1 a {
     font-weight: bold;
     font-size: 36px;
-    color: #1b263b;
+    color: var(--color3);
     text-decoration: none;
 }
 
@@ -43,7 +53,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #415a77;
+    color: var(--color2);
 }
 
 header nav ul {
@@ -59,6 +69,13 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+
+header nav ul li a:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 10px;
+}
+
 /* Header style ends */
 
 /* Footer style begins */
@@ -67,8 +84,8 @@ footer {
     align-items: center;
     padding: 15px;
     margin-top: 20px;
-    background-color: #1b263b;
-    color: #e0e1dd;
+    background-color: var(--color3);
+    color: var(--color1);
     justify-content: space-between;
 }
 
@@ -107,6 +124,7 @@ footer h5 {
 }
 /* About me section style ends */
 
+/* Work section style begins */
 .work {
     margin: 20px auto;
     display: flex;
@@ -149,9 +167,13 @@ footer h5 {
     bottom: 15px;
     left: 25px;
     width: 60%;
-    background-color: #415a77;
-    color: #e0e1dd;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color2transparency);
+    color: var(--color1);
 }
+/* Work section style ends */
+
 
 /* Contact section style begins */
 .contact {
@@ -162,15 +184,38 @@ footer h5 {
     flex-wrap: wrap;
 }
 
+.contact h2 {
+    text-align: center;
+}
+
 .contact address ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    font-style: normal;
 }
 
 .contact ul li {
     margin: 20px;
 }
 /* Contact section style ends */
+
+/* Media queries for smaller devices */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    /* this will be applied on any screen smaller than 980px */
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    /* this will be applied on any screen between 768px and 575px */
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    /* this will be applied on any screen smaller than 575px */
+}
