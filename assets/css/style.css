@@ -2,6 +2,7 @@
 :root { 
     --color1: #e0e1dd;
     --color2: #415a77;
+    /* Uses RGBA for transparency */
     --color2transparency: rgba(65, 90, 119, 0.8);
     --color3: #1b263b;
 }
@@ -15,6 +16,7 @@
     box-sizing: border-box;
 }
 
+/* Sets smooth scroll movement when clicking the nav bar links */
 html {
     scroll-behavior: smooth;
 }
@@ -25,6 +27,7 @@ body {
     font-family: Avenir, Montserrat, sans-serif;
 }
 
+/* Used to remove link attributes defined by the browser */
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: inherit;
@@ -70,6 +73,7 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+/* Sets new style when the user hovers over the link */
 header nav ul li a:hover {
     background-color: var(--color2);
     color: var(--color1);
@@ -79,6 +83,7 @@ header nav ul li a:hover {
 /* Header style ends */
 
 /* Footer style begins */
+/* Sets the elements on opposite sides and centralizes on the vertical axis */
 footer {
     display: flex;
     align-items: center;
@@ -99,6 +104,7 @@ footer h5 {
 /* Footer style ends */
 
 /* About me section style begins */
+/* Sets the about me elements side by side */
 .about-me {
     margin: 20px auto;
     display: flex;
@@ -116,10 +122,15 @@ footer h5 {
     margin: 20px 50px;
     text-align: justify;
 }
+.about-img-text {
+    display: flex;
+    align-items: center;
+}
 
+/* Rounded corners makes the image circular */
 .about-me img {
     width: 100px;
-    border-radius: 50%;
+    border-radius: 50%; 
     margin: 10%;
 }
 /* About me section style ends */
@@ -149,8 +160,7 @@ footer h5 {
 
 .work-main {
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 10px;
     width: 100%;
     flex: 0 100%
 }
@@ -162,6 +172,7 @@ footer h5 {
     padding: 10px;
 }
 
+/* Creates the title boxes */
 .work-title {
     position: absolute;
     bottom: 15px;
@@ -207,15 +218,119 @@ footer h5 {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     /* this will be applied on any screen smaller than 980px */
+    /* Stacks the nav elements under the page title */
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
 
+    header h1 {
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .title {
+        display: flex;
+        width: 100%;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        flex: 0 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* Centers the footer info on the page vertical axis */
+    footer h5, footer div {
+        text-align: center;
+        width: 100%;
+    }
+ 
+    .about-me {
+        display: block;
+        width: 80%;
+    }
+
+    .about-me h2 {
+        text-align: center;
+    }
+
+    .profile-picture {
+        padding-right: 25px;
+    }   
+
+    .text-about-me, .about-me p {
+        margin: 10px;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     /* this will be applied on any screen between 768px and 575px */
+    .contact {
+        display: block;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
     /* this will be applied on any screen smaller than 575px */
+
+    /* Adds line under the section h2 titles */
+    h2 {
+        border-bottom: 1px solid var(--color2);
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* Removes formatting from previous size */
+    .about-me h2 {
+        margin-right: auto;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .work-main, .work-secondary {
+        padding: 0%;
+    }
+
+    .work-title {
+        margin-bottom: 15px;
+    }
+
+    /* Main image should be taller than the rest */
+    .work-main img {
+        min-height: 500px;
+    }
+
+    .work-secondary {
+        flex: 100%;
+    }
+
+    .work img {
+        padding: 15px;
+    }
+
+    /* Stacks the links under the title */
+    .contact address ul {
+        margin-top: 25px;
+        display: block;
+    }
+
+    /* Sets a smaller margin between elements for the vertical layout */
+    .contact address ul li {
+        margin: 5px;
+    }
 }
