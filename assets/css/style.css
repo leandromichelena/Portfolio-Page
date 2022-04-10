@@ -155,7 +155,7 @@ footer h5 {
     max-height: 400px;
     object-fit: cover;
     display: flex;
-    object-position: top;
+    /* object-position: top; */
 }
 
 .work-main {
