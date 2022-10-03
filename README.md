@@ -7,7 +7,7 @@ The objective of this exercise is to demonstrate the CSS techiniques learned dur
 The main challenge was to use advanced CSS techniques to create visual enhancements and make the page responsive to different screen sizes.
 
 ## Website
-https://leandromichelena.github.io/Portfolio-Page/
+https://www.leandromichelena.com/
 
 ## Page Screengrab
 ![](./assets/images/PageScreenshot.jpg)
